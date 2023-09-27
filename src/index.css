@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,124 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.custom-success{
+  background-color: lightgreen !important;
+  color: white;
+  border: none;
+}
+.action-success{
+  color: lightgreen;
+}
+.action-fail{
+  color: red;
+}
+
+.custom-missing {
+  background-color: rgb(236, 73, 73) !important;
+  color: white;
+  border: none;
+}
+
+.custom-urgent {
+  background-color: red !important;
+  color: white;
+  border: none;
+}
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000; 
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: var(--bs-breadcrumb-item-padding-x);
+    color: var(--bs-breadcrumb-divider-color);
+    content: var(--bs-breadcrumb-divider, ">");
+}
+
+section ul{
+    list-style: none;
+    padding:0;
+  }
+section ul li{
+  border-right: 2px solid grey;
+  padding:1rem 1rem;
+  width:auto;
+}
+section ul li:last-child{
+  border-right: none;
+}
+
+section ul h6{
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+.text-data{
+  border-right: 2px solid grey;
+}
+.text-data h6, h5{
+  text-align: left;
+}
+.text-data-last h6, h5{
+  text-align: left;
+}
+.text-data h6{
+  color: grey;
+  font-size: 0.875rem;
+}
+.text-data-last h6{
+  color: grey;
+  font-size: 0.875rem;
+}
+.text-data h5{
+  font-size: 1rem;
+}
+.text-data-last h5{
+  font-size: 1rem;
+}
+.search-bar{
+  position: relative;
+}
+.search-bar span{
+  position: absolute;
+  content: "";inset: auto 2% auto auto;
+}
+.search-bar input{
+  border-radius: 50px;
+}
+.action{
+  cursor: pointer;
+}
+.bd-status{
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prod-avt{
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.table-data tr td:nth-child(7),
+td:nth-child(8) {
+  background-color: rgb(250, 247, 247);
+}
+.modal-footer, .modal-header{
+  border: none;
+}
+.breadcrumb-item a{
+  color: #000000;
+  text-decoration: none;
+}
+.breadcrumb-item.active{
+  text-decoration: underline;
 }
